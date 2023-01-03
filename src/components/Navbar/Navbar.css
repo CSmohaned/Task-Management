@@ -1,0 +1,80 @@
+  .Header {
+  background-color: #282c34;
+  min-height: 10vh;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+ 
+.Right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 15px;
+  margin: 0;
+  width: 90vw;
+}
+.Right .Link {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 20px;
+    padding: 5px;
+}
+.Left {
+    display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  width: 10vw;
+}
+.Left .Linkk {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 20px;
+    padding: 5px;
+    
+}
+.Link:hover {
+    background-color: dodgerblue;
+}
+.Linkk:hover {
+    background-color: dodgerblue;
+}
+@media only screen and (max-width: 1038px) {
+    /* For desktob: */
+    .Right {
+        width: 90vw;
+    }
+    .Left {
+        width: 10vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    /* For tablets: */
+    .Right {
+        width: 90vw;
+    }
+    .Left {
+        width: 50vw;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    /* For mobile: */
+    .Right {
+        width: 90vw;
+    }
+    .Left {
+        width: 30vw;
+    }
+  }
